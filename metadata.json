@@ -1,0 +1,7 @@
+{
+  "name": "EPIC Group OS (EOS)",
+  "description": "A mission-critical corporate OS with three pillars: EPIC Intelligence (AI Engine), APEX (Decision Governance), and SPACES (Asset Telemetry). Designed for SEC-level transparency and automated compliance.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
