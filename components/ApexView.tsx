@@ -54,7 +54,7 @@ const ApexView: React.FC = () => {
                   {MOCK_PROJECTS.map((project) => (
                     <tr key={project.id} className="hover:bg-zinc-900/50 transition-all duration-300 group">
                       <td className="p-8">
-                        <div className="text-sm font-black uppercase italic tracking-tighter group-hover:text-lime transition-colors text-white">{project.name}</div>
+                        <div className="text-sm font-black uppercase tracking-tighter group-hover:text-lime transition-colors text-white">{project.name}</div>
                         <div className="text-[10px] text-zinc-600 font-mono mt-1.5 uppercase">MOD: {project.lastUpdate}</div>
                       </td>
                       <td className="p-8 text-center">
@@ -101,7 +101,7 @@ const ApexView: React.FC = () => {
                 <div key={i} className="relative group">
                   <div className="absolute -left-[37px] top-1.5 w-2 h-2 rounded-full bg-zinc-800 group-hover:bg-lime transition-colors border border-zinc-950" />
                   <div className="text-[10px] text-zinc-600 font-mono mb-1.5 uppercase tracking-tighter">{log.time} // {log.user}</div>
-                  <div className="text-xs font-black text-zinc-200 group-hover:text-white transition-colors uppercase italic tracking-tight">{log.action}</div>
+                  <div className="text-xs font-black text-zinc-200 group-hover:text-white transition-colors uppercase tracking-tight">{log.action}</div>
                 </div>
               ))}
             </div>
@@ -113,7 +113,7 @@ const ApexView: React.FC = () => {
                <ICONS.Shield className="w-5 h-5" />
                Logic Gate
              </h3>
-             <div className="space-y-5 text-[11px] font-bold uppercase italic leading-snug">
+             <div className="space-y-5 text-[11px] font-bold uppercase leading-snug">
                <p className="tracking-tight">IF (PERMIT == OK && INDEMNITY == OK) → SIG_GREEN</p>
                <p className="opacity-40 tracking-tight">ELSE → FAIL_SAFE_LOCKDOWN</p>
                <div className="pt-8 border-t border-black/15 mt-8">

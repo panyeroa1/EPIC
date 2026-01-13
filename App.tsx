@@ -79,7 +79,7 @@ const App: React.FC = () => {
         <div className="mb-16">
           <div className="flex items-center gap-4 mb-3">
             <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg">
-               <span className="font-black text-black text-xl italic">E</span>
+               <span className="font-black text-black text-xl">E</span>
             </div>
             <div>
               <h1 className="font-black text-2xl tracking-tighter uppercase text-white leading-none">EOS</h1>
@@ -144,7 +144,7 @@ const App: React.FC = () => {
               <p className="text-[11px] font-black text-lime mb-3 uppercase tracking-[0.4em]">
                 {activePillar} INTERFACE
               </p>
-              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
+              <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase">
                 {activePillar === Pillar.APEX && 'Governance Oversight'}
                 {activePillar === Pillar.INTELLIGENCE && 'Neural Intelligence'}
                 {activePillar === Pillar.SPACES && 'Asset Telemetry'}

@@ -40,7 +40,7 @@ const AccordionSection: React.FC<{
               <span className="group-hover/item:text-zinc-100 transition-colors font-light">{item}</span>
             </li>
           ))}
-          {items.length === 0 && <li className="text-[10px] text-zinc-600 font-mono uppercase italic tracking-widest">Vector Zero: System Normal</li>}
+          {items.length === 0 && <li className="text-[10px] text-zinc-600 font-mono uppercase tracking-widest">Vector Zero: System Normal</li>}
         </ul>
       </div>
     )}
@@ -149,7 +149,7 @@ const Intelligence: React.FC = () => {
                 <div className="text-lime drop-shadow-[0_0_15px_rgba(217,255,0,0.4)]">
                    <ICONS.Brain className={`w-12 h-12 md:w-16 md:h-16 mx-auto ${loading ? 'animate-pulse' : ''}`} />
                 </div>
-                <h4 className="text-white font-black text-sm md:text-base uppercase italic tracking-tighter px-6 truncate max-w-full">{fileName}</h4>
+                <h4 className="text-white font-black text-sm md:text-base uppercase tracking-tighter px-6 truncate max-w-full">{fileName}</h4>
                 {!loading && (
                   <button onClick={(e) => { e.stopPropagation(); setFileName(null); setAnalysis(null); }} className="text-[10px] font-black text-zinc-500 hover:text-white uppercase tracking-widest transition-colors py-2 px-6 border border-zinc-800 rounded-full hover:border-zinc-700">Detach Asset</button>
                 )}
@@ -184,7 +184,7 @@ const Intelligence: React.FC = () => {
                       <p className="text-[11px] font-black text-zinc-100 tracking-widest uppercase">{processingPhase}</p>
                       <p className="text-[8px] text-zinc-600 font-mono uppercase tracking-tighter">VPC_TUNNELING_ACTIVE</p>
                     </div>
-                    <span className="text-4xl font-black text-lime italic tracking-tighter">{Math.floor(progress)}%</span>
+                    <span className="text-4xl font-black text-lime tracking-tighter">{Math.floor(progress)}%</span>
                   </div>
                 </div>
               </div>

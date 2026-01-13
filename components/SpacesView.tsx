@@ -14,7 +14,7 @@ const SpacesView: React.FC = () => {
                alt="Site Feed" 
                className="w-full h-full object-cover opacity-40 grayscale group-hover:opacity-60 group-hover:grayscale-0 transition-all duration-1000"
              />
-             <div className="absolute top-8 left-8 bg-zinc-100 text-black px-5 py-2 text-[11px] font-black uppercase tracking-[0.3em] italic rounded-full flex items-center gap-3 ios-shadow">
+             <div className="absolute top-8 left-8 bg-zinc-100 text-black px-5 py-2 text-[11px] font-black uppercase tracking-[0.3em] rounded-full flex items-center gap-3 ios-shadow">
                <div className="w-2 h-2 bg-rose-600 rounded-full animate-pulse" />
                Live: Sector_07G
              </div>
@@ -23,7 +23,7 @@ const SpacesView: React.FC = () => {
              <div className="absolute bottom-10 left-10 right-10 flex justify-between items-end">
                 <div className="bg-black/80 p-8 rounded-3xl border border-white/10 backdrop-blur-2xl ios-shadow">
                   <p className="text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-3">Neural_Progress_Index</p>
-                  <p className="text-4xl font-black text-lime italic tracking-tighter leading-none">82.4%_SIG</p>
+                  <p className="text-4xl font-black text-lime tracking-tighter leading-none">82.4%_SIG</p>
                 </div>
                 <button className="w-16 h-16 bg-white hover:bg-lime transition-all duration-500 rounded-2xl flex items-center justify-center group/btn ios-shadow active:scale-90">
                   <ICONS.Building className="w-7 h-7 text-black group-hover/btn:scale-110 transition-transform duration-500" />
@@ -39,7 +39,7 @@ const SpacesView: React.FC = () => {
              ].map(item => (
                <div key={item.label} className="text-center">
                  <p className="text-[10px] text-zinc-600 uppercase font-black tracking-widest mb-2">{item.label}</p>
-                 <p className={`text-xs font-black italic tracking-tighter ${item.color}`}>{item.status}</p>
+                 <p className={`text-xs font-black tracking-tighter ${item.color}`}>{item.status}</p>
                </div>
              ))}
           </div>
@@ -67,14 +67,14 @@ const SpacesView: React.FC = () => {
                      'bg-zinc-800'
                    }`} />
                    <div className="flex justify-between items-start gap-4 mb-2">
-                      <h4 className="text-xs font-black text-white italic tracking-tighter group-hover:text-lime transition-colors leading-none">{permit.title}</h4>
-                      <span className="text-[9px] text-zinc-600 font-mono italic">{permit.date}</span>
+                      <h4 className="text-xs font-black text-white tracking-tighter group-hover:text-lime transition-colors leading-none">{permit.title}</h4>
+                      <span className="text-[9px] text-zinc-600 font-mono">{permit.date}</span>
                    </div>
                    <p className="text-[10px] text-zinc-500 font-black uppercase tracking-widest opacity-60 leading-none">{permit.stage}</p>
                 </div>
               ))}
            </div>
-           <button className="mt-14 w-full py-5 bg-white hover:bg-lime text-black text-[11px] font-black uppercase tracking-[0.4em] italic transition-all duration-500 rounded-2xl active:scale-95 ios-shadow">
+           <button className="mt-14 w-full py-5 bg-white hover:bg-lime text-black text-[11px] font-black uppercase tracking-[0.4em] transition-all duration-500 rounded-2xl active:scale-95 ios-shadow">
              Matrix_Report_V2
            </button>
         </div>

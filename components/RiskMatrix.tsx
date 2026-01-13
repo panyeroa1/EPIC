@@ -25,7 +25,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-black border border-white/10 p-3 shadow-2xl">
-        <p className="text-[10px] font-black text-white uppercase tracking-widest italic">{payload[0].payload.name}</p>
+        <p className="text-[10px] font-black text-white uppercase tracking-widest">{payload[0].payload.name}</p>
         <p className="text-[9px] font-mono text-lime mt-1">RISK_SIG: {payload[0].payload.risk}</p>
       </div>
     );
